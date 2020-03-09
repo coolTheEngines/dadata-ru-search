@@ -16,32 +16,7 @@ import { Address } from '../domain/address.model'
 
             </ng-select>
             
-            <form [formGroup]="addressForm">
-            <div>
-              <label>
-                postalCode:
-                <input type="text" formControlName="postalCode">
-              </label> 
-               </div>
-               <div>
-              <label>
-                city:
-                <input type="text" formControlName="city">
-              </label>
-              </div>
-              <div>
-              <label>
-                street
-                <input type="text" formControlName="street">
-              </label>
-              </div>
-              <div>
-              <label>
-                house:
-                <input type="text" formControlName="house">
-              </label>
-              </div>
-            </form>`,
+            <form-address [addressForm]="addressForm"></form-address>`,
   styleUrls: []
 })
 export class DaDataComponent {

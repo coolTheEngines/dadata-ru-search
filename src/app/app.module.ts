@@ -5,14 +5,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgSelectModule } from '@ng-select/ng-select';
 
 import { AppComponent } from './app.component';
-import { DaDataComponent} from './daData/da-data.component'
+import { DaDataComponent} from './daData/da-data.component';
+import { FormAddressComponent } from './daData/form-address.component';
 
-import { DaDataService } from './services/da-data.service'
+import { DaDataService } from './services/da-data.service';
 import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, HttpClientModule, NgSelectModule, ReactiveFormsModule ],
-  declarations: [ AppComponent, DaDataComponent ],
+  declarations: [ AppComponent, DaDataComponent, FormAddressComponent ],
   bootstrap:    [ AppComponent ],
   providers:    [ DaDataService ]
 })
