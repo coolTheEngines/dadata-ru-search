@@ -35,10 +35,5 @@ import { Address } from '../domain/address.model'
 })
 export class FormAddressComponent {
   @Input()
-  private addressForm = new FormGroup({
-      postalCode: new FormControl(''),
-      city: new FormControl(''),
-      street: new FormControl(''),
-      house: new FormControl('')
-  });
+  private addressForm;
 }
