@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
-import { Address } from '../domain/address.model'
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'form-address',
@@ -35,5 +34,5 @@ import { Address } from '../domain/address.model'
 })
 export class FormAddressComponent {
   @Input()
-  private addressForm;
+  private addressForm: FormGroup;
 }
