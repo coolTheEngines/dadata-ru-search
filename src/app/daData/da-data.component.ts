@@ -12,7 +12,7 @@ import { Address } from '../domain/address.model'
                    [(ngModel)]="data"
                    (ngModelChange)="onChange(data.value)"
                    (search)=search($event)
-                   [searchFn]=search1>
+                   [searchFn]=filter>
 
             </ng-select>
             
@@ -32,7 +32,7 @@ export class DaDataComponent {
 
   constructor(private daDadataService: DaDataService){}
 
-  private search1(arg: any, arg2: any) {
+  private filter(arg: any, arg2: any) {
     return true;
   }
 
